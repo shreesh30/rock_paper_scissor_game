@@ -11,32 +11,38 @@ else:
     computer="scissors"
 
 while player_wins<play_time and computer_wins<play_time:
-    player=input("enter the choice you want to play.")
+    player=input("enter the choice you want to play:")
     if player=="quit" or player=="q":
         break
     elif player=="rock":
         if computer=="paper":
+            print(f"the computer played :{computer}")
             computer_wins+=1
             print(f"computer wins {computer_wins}")
         elif computer=="scissors":
+            print(f"the computer played :{computer}")
             player_wins+=1
             print(f"player wins {player_wins}")
         else:
             print("its a tie")
     elif player=="paper":
         if computer=="rock":
+            print(f"the computer played :{computer}")
             player_wins+=1
             print(f"player wins {player_wins}")
         elif computer=="scissors":
+            print(f"the computer played :{computer}")
             computer_wins+=1
             print(f"computer wins {computer_wins}")
         else:
             print("its a tie")
     elif player=="scissors":
         if computer=="rock":
+            print(f"the computer played :{computer}")
             computer_wins+=1
             print(f"computer wins {computer_wins}")
         elif computer=="paper":
+            print(f"the computer played :{computer}")
             player_wins+=1
             print(f"player wins {player_wins}")
         else:
