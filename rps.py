@@ -1,6 +1,7 @@
 from random import randint
 rand_choice=randint(0,2)
-play_time=3
+print("enter the number of times you want to play:")
+play_time=int(input())
 computer_wins=0
 player_wins=0
 if randint=="0":
@@ -11,7 +12,7 @@ else:
     computer="scissors"
 
 while player_wins<play_time and computer_wins<play_time:
-    player=input("enter the choice you want to play:")
+    player=input("enter the choice you want to play (you can press q or type quit if you want to quit the game):")
     if player=="quit" or player=="q":
         break
     elif player=="rock":
